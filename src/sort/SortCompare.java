@@ -59,6 +59,8 @@ class SortComPare{
         int T = Integer.parseInt(args[3]);
         double t1 = timeRandomInput(alg1, N, T);
         double t2 = timeRandomInput(alg2, N, T);
+        StdOut.printf("%s  ALGS takes %.1f \n",alg1,t1);
+        StdOut.printf("%s  ALGS takes %.1f \n",alg2,t2);
         StdOut.printf("For %d random doubles\n %s is %.1f times faster than %s \n",N,alg1,t2/t1,alg2);
     }
 }
